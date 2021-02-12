@@ -5,11 +5,11 @@ const isScreenSmall = window.matchMedia("(max-width: 700px)");
 let predictedAges = [];
 
 async function playVideo () {
-	await faceapi.nets.tinyFaceDetector.loadFromUri("/mohamednifrad.github.io/models"),
-	await faceapi.nets.faceLandmark68Net.loadFromUri("/mohamednifrad.github.io/models"),
-	await faceapi.nets.faceRecognitionNet.loadFromUri("/mohamednifrad.github.io/models"),
-	await faceapi.nets.faceExpressionNet.loadFromUri("/mohamednifrad.github.io/models"),
-	await faceapi.nets.ageGenderNet.loadFromUri("/mohamednifrad.github.io/models")
+	await faceapi.nets.tinyFaceDetector.loadFromUri("/models"),
+	await faceapi.nets.faceLandmark68Net.loadFromUri("/models"),
+	await faceapi.nets.faceRecognitionNet.loadFromUri("/models"),
+	await faceapi.nets.faceExpressionNet.loadFromUri("/models"),
+	await faceapi.nets.ageGenderNet.loadFromUri("/models")
     const stream = await navigator.mediaDevices.getUserMedia({
       video: true
     });
