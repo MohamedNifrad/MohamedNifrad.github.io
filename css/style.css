@@ -3,8 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
-  background: #2f2f2f;
   width: calc(100% - 33px);
+  background-image: url('../img/img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 canvas {
@@ -36,6 +39,10 @@ canvas {
 #emotion {
   background: #8a1025;
 }
+#genderProbability
+{
+  background: #7a1025;
+}
 #gender {
   background: #62d8a5;
 }
@@ -49,4 +56,5 @@ header {
   font-size: 2rem;
   padding: 1rem;
   font-size: 2rem;
+  text-align:center;
 }
